@@ -1,20 +1,23 @@
 {
-  "name": "aperture-landing",
+  "name": "aperture",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "npm run build && gh-pages -d dist"
   },
   "devDependencies": {
     "scss": "^0.2.4",
     "vite": "^7.0.0",
-    "vite-plugin-gh-pages": "^1.0.1"
+    "vite-plugin-gh-pages": "^1.0.1",
+    "gh-pages": "^6.0.0"
   },
   "dependencies": {
     "sass": "^1.89.2",
     "scss-reset": "^1.4.6"
-  }
+  },
+  "homepage": "/aperture"
 }

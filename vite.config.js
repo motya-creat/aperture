@@ -1,12 +1,13 @@
 import { defineConfig } from 'vite';
-import ghPages from 'vite-plugin-gh-pages';
+import { ghPages } from 'vite-plugin-gh-pages';
 
 export default defineConfig({
+  base: '/aperture/', 
   plugins: [
-    ghPages({
-      base: process.env.NODE_ENV === 'production' ? '/<aperture>/' : '/',
-      repo: '<motya-creat>/<aperture>',
-      branch: 'gh-pages',
-    }),
+    ghPages()
   ],
+  build: {
+    outDir: 'dist',
+    emptyOutDir: true
+  }
 });

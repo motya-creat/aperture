@@ -190,8 +190,6 @@ header {
             color: #fff;
         }
     }
-
-
 }
 
 .section-main {
@@ -284,7 +282,7 @@ header {
         }
 
         p:last-child {
-            font-size: 1, 43rem;
+            font-size: 1,43rem;
             color: #c0c0c0;
         }
     }
@@ -509,6 +507,7 @@ header {
                         background-color: #E5E7EB;
                         border-radius: var(--border-radius);
                     }
+
                     .message__form__button {
                         width: 50px;
                         height: 25px;
@@ -518,10 +517,10 @@ header {
                         right: 10px;
                         border-radius: var(--border-radius);
 
-                    &::before {
-                        content: ">";
-                        color: $white-col;
-                    }
+                        &::before {
+                            content: ">";
+                            color: $white-col;
+                        }
                     }
                 }
             }
@@ -532,9 +531,7 @@ header {
             justify-content: space-between;
             color: $col-grey;
 
-            .copyright__license {
-
-            }
+            .copyright__license {}
 
             .copyright__social-icons {
                 flex-direction: row;
@@ -544,8 +541,7 @@ header {
 
     }
 
-
-
+    
 }
 
 @media (max-width: 1730px) {
