@@ -1,2 +1,0 @@
-# aperture
-Aperture practice landing
